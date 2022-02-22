@@ -48,19 +48,77 @@ struct MainView: View {
         }
     }
 
+//    var buttonAreaView: some View {
+//        VStack {
+//            Spacer()
+//            LocketModeControl(selectedMode: $selectedMode)
+//            HStack {
+//                flashButton
+//                captureButton
+//                flipCameraButton
+//            }
+//            transitButton
+//                .padding(.bottom)
+//                .padding(.bottom)
+//        }
+//    }
+
     var buttonAreaView: some View {
         VStack {
             Spacer()
             LocketModeControl(selectedMode: $selectedMode)
             HStack {
-                flashButton
-                captureButton
-                flipCameraButton
+                Group {
+                    switch selectedMode {
+                        case .photo:
+                        flashButton
+                        captureButton
+                        flipCameraButton
+                        case .text:
+                        undoButton
+                        captureButton
+                        trashButton
+                    }
+                }
             }
             transitButton
                 .padding(.bottom)
                 .padding(.bottom)
         }
+    }
+
+    var undoButton: some View {
+        Button {
+            destination = .main
+        } label: {
+            ZStack {
+                Circle()
+                    .frame(width: 65, height: 65, alignment: .center)
+                    .foregroundColor(.white)
+                    .opacity(0.20)
+                Image("undo")
+                    .resizable()
+                        .frame(width: 24.0, height: 24.0)
+                    .font(.system(size: 20, weight: .medium, design: .default))
+            }
+        }
+    }
+
+    var trashButton: some View {
+            Button {
+                destination = .main
+            } label: {
+                ZStack {
+                    Circle()
+                        .frame(width: 65, height: 65, alignment: .center)
+                        .foregroundColor(.white)
+                        .opacity(0.20)
+                    Image("bin")
+                        .resizable()
+                            .frame(width: 32.0, height: 32.0)
+                        .font(.system(size: 20, weight: .medium, design: .default))
+                }
+            }
     }
 
     var flashButton: some View {

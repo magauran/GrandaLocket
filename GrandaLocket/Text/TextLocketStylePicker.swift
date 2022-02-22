@@ -25,6 +25,14 @@ struct TextLocketStylePicker: View {
                         )
                 }
             }
+            Button(action: {
+                DrawView()
+            }, label: {
+                Image("draw")
+                    .resizable()
+                    .frame(width: 18.0, height: 18.0)
+                    .font(.system(size: 20, weight: .medium, design: .default))
+            })
         }
     }
 }

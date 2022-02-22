@@ -35,10 +35,10 @@ struct drawSection: View {
             ForEach(curves.indices, id: \.self) { index in
                 DrawShape(points: curves[index])
                     .stroke(lineWidth: 5) // here you put width of lines
-                    .foregroundColor(.blue)
+                    .foregroundColor(.black)
             }
         }
-        .frame(width: width, height: height)
+//        .frame(width: width, height: height)
     }
 
     private func addNewPoint(_ value: DragGesture.Value, borderX: CGFloat, borderY: CGFloat) {
