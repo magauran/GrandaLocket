@@ -90,18 +90,18 @@
 		92FBDAD427B6B4B30062A9A7 /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = 92FBDAD327B6B4B30062A9A7 /* PhoneNumberKit */; };
 		A872542B27C8DC880025CC8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A872542927C8DC880025CC8A /* InfoPlist.strings */; };
 		A872542E27C8DC880025CC8A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A872542C27C8DC880025CC8A /* Localizable.strings */; };
-		A872543527C8DFEF0025CC8A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543427C8DFEF0025CC8A /* Helper.swift */; };
-		A872543727C8E0750025CC8A /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543627C8E0750025CC8A /* WidgetView.swift */; };
-		A872543927C8E0910025CC8A /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543827C8E0910025CC8A /* ImageManager.swift */; };
-		A872543B27C8E0B10025CC8A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543A27C8E0B10025CC8A /* ImagePicker.swift */; };
 		A872544427C8E1350025CC8A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A872544327C8E1350025CC8A /* WidgetKit.framework */; };
 		A872544627C8E1350025CC8A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A872544527C8E1350025CC8A /* SwiftUI.framework */; };
-		A872544927C8E1350025CC8A /* GrandaLocketWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872544827C8E1350025CC8A /* GrandaLocketWidget.swift */; };
 		A872544C27C8E1370025CC8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A872544B27C8E1370025CC8A /* Assets.xcassets */; };
 		A872544E27C8E1370025CC8A /* GrandaLocketWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A872544A27C8E1350025CC8A /* GrandaLocketWidget.intentdefinition */; };
 		A872544F27C8E1370025CC8A /* GrandaLocketWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A872544A27C8E1350025CC8A /* GrandaLocketWidget.intentdefinition */; };
 		A872545227C8E1370025CC8A /* GrandaLocketWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A872544227C8E1350025CC8A /* GrandaLocketWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A872545927C8E4E40025CC8A /* PhotoWidgetExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872545827C8E4E40025CC8A /* PhotoWidgetExtention.swift */; };
+		A872545A27C8E6160025CC8A /* PhotoWidgetExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872545827C8E4E40025CC8A /* PhotoWidgetExtention.swift */; };
+		A872545B27C8E63B0025CC8A /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543827C8E0910025CC8A /* ImageManager.swift */; };
+		A872545C27C8E6430025CC8A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543A27C8E0B10025CC8A /* ImagePicker.swift */; };
+		A872545D27C8E6460025CC8A /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543627C8E0750025CC8A /* WidgetView.swift */; };
+		A872545E27C8E64B0025CC8A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543427C8DFEF0025CC8A /* Helper.swift */; };
+		A872545F27C8E6990025CC8A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543427C8DFEF0025CC8A /* Helper.swift */; };
 		C12357A527BD2B4E0093D55E /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12357A427BD2B4E0093D55E /* Palette.swift */; };
 		C12357A827BEA0930093D55E /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12357A727BEA0930093D55E /* Typography.swift */; };
 /* End PBXBuildFile section */
@@ -220,7 +220,6 @@
 		A872544227C8E1350025CC8A /* GrandaLocketWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GrandaLocketWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A872544327C8E1350025CC8A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		A872544527C8E1350025CC8A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		A872544827C8E1350025CC8A /* GrandaLocketWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandaLocketWidget.swift; sourceTree = "<group>"; };
 		A872544A27C8E1350025CC8A /* GrandaLocketWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = GrandaLocketWidget.intentdefinition; sourceTree = "<group>"; };
 		A872544B27C8E1370025CC8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A872544D27C8E1370025CC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -294,7 +293,6 @@
 				C12357A627BE98E40093D55E /* DesignKit */,
 				922F74B227BE9C2800E03453 /* Services */,
 				92E4F57127C407C90040E25B /* SendView */,
-				A872543327C8DFD40025CC8A /* Widget */,
 				92D14E5927C505B800998DED /* Feed */,
 				92CC9FD827BA6518009C7AB7 /* Fonts */,
 				92664A5227B5084F006C860E /* BlurView.swift */,
@@ -472,7 +470,7 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		A872543327C8DFD40025CC8A /* Widget */ = {
+		A872544727C8E1350025CC8A /* GrandaLocketWidget */ = {
 			isa = PBXGroup;
 			children = (
 				A872543427C8DFEF0025CC8A /* Helper.swift */,
@@ -480,14 +478,6 @@
 				A872543627C8E0750025CC8A /* WidgetView.swift */,
 				A872543827C8E0910025CC8A /* ImageManager.swift */,
 				A872543A27C8E0B10025CC8A /* ImagePicker.swift */,
-			);
-			name = Widget;
-			sourceTree = "<group>";
-		};
-		A872544727C8E1350025CC8A /* GrandaLocketWidget */ = {
-			isa = PBXGroup;
-			children = (
-				A872544827C8E1350025CC8A /* GrandaLocketWidget.swift */,
 				A872544A27C8E1350025CC8A /* GrandaLocketWidget.intentdefinition */,
 				A872544B27C8E1370025CC8A /* Assets.xcassets */,
 				A872544D27C8E1370025CC8A /* Info.plist */,
@@ -649,29 +639,25 @@
 			files = (
 				92388C9B27C6CA7000C43B3B /* PhotosInfo.swift in Sources */,
 				92388C9527C6772D00C43B3B /* SendViewModel.swift in Sources */,
-				A872543727C8E0750025CC8A /* WidgetView.swift in Sources */,
 				92D14E5F27C58F2900998DED /* UserImagesService.swift in Sources */,
 				92D14E5D27C58BFA00998DED /* FeedViewModel.swift in Sources */,
 				92D14E5B27C5065100998DED /* FeedView.swift in Sources */,
 				92D0239627B28E1F00099E69 /* CameraService.swift in Sources */,
 				A872544F27C8E1370025CC8A /* GrandaLocketWidget.intentdefinition in Sources */,
 				92664A5527B51CA6006C860E /* MainView.swift in Sources */,
-				A872545927C8E4E40025CC8A /* PhotoWidgetExtention.swift in Sources */,
+				A872545F27C8E6990025CC8A /* Helper.swift in Sources */,
 				92D14E5827C436A300998DED /* DrawView.swift in Sources */,
 				886A463F27BBBD5B00B6290A /* HealthyPersonTextEditor.swift in Sources */,
 				922F74AB27BE75F000E03453 /* FooterNextView.swift in Sources */,
 				92D0239527B28E1F00099E69 /* ImageResizer.swift in Sources */,
 				92E4F57727C410A80040E25B /* ContactRow.swift in Sources */,
-				A872543527C8DFEF0025CC8A /* Helper.swift in Sources */,
 				92388C9727C69CE300C43B3B /* DownloadImageService.swift in Sources */,
 				92D14E5027C432F300998DED /* ExtensionUIImage.swift in Sources */,
 				92D14E5227C4337D00998DED /* ExtensionUIScreen.swift in Sources */,
-				A872543B27C8E0B10025CC8A /* ImagePicker.swift in Sources */,
 				92D0239727B28E1F00099E69 /* PhotoCaptureProcessor.swift in Sources */,
 				92D0238C27B27D2100099E69 /* AppDelegate.swift in Sources */,
 				922F74A727BD208A00E03453 /* ContactInfo.swift in Sources */,
 				92D14E5427C433D500998DED /* ExtensionString.swift in Sources */,
-				A872543927C8E0910025CC8A /* ImageManager.swift in Sources */,
 				92FBDAD127B699820062A9A7 /* PhoneNumberView.swift in Sources */,
 				92664A5327B50850006C860E /* BlurView.swift in Sources */,
 				C12357A527BD2B4E0093D55E /* Palette.swift in Sources */,
@@ -715,8 +701,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A872544927C8E1350025CC8A /* GrandaLocketWidget.swift in Sources */,
+				A872545D27C8E6460025CC8A /* WidgetView.swift in Sources */,
+				A872545E27C8E64B0025CC8A /* Helper.swift in Sources */,
+				A872545A27C8E6160025CC8A /* PhotoWidgetExtention.swift in Sources */,
+				A872545C27C8E6430025CC8A /* ImagePicker.swift in Sources */,
 				A872544E27C8E1370025CC8A /* GrandaLocketWidget.intentdefinition in Sources */,
+				A872545B27C8E63B0025CC8A /* ImageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -56,9 +56,9 @@ struct WidgetView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct WidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        WidgetView()
             .environmentObject(ImageManager())
     }
 }
