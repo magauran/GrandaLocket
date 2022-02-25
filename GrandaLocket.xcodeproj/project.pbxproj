@@ -101,6 +101,7 @@
 		A872544E27C8E1370025CC8A /* GrandaLocketWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A872544A27C8E1350025CC8A /* GrandaLocketWidget.intentdefinition */; };
 		A872544F27C8E1370025CC8A /* GrandaLocketWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A872544A27C8E1350025CC8A /* GrandaLocketWidget.intentdefinition */; };
 		A872545227C8E1370025CC8A /* GrandaLocketWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A872544227C8E1350025CC8A /* GrandaLocketWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A872545927C8E4E40025CC8A /* PhotoWidgetExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872545827C8E4E40025CC8A /* PhotoWidgetExtention.swift */; };
 		C12357A527BD2B4E0093D55E /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12357A427BD2B4E0093D55E /* Palette.swift */; };
 		C12357A827BEA0930093D55E /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12357A727BEA0930093D55E /* Typography.swift */; };
 /* End PBXBuildFile section */
@@ -223,6 +224,7 @@
 		A872544A27C8E1350025CC8A /* GrandaLocketWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = GrandaLocketWidget.intentdefinition; sourceTree = "<group>"; };
 		A872544B27C8E1370025CC8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A872544D27C8E1370025CC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A872545827C8E4E40025CC8A /* PhotoWidgetExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWidgetExtention.swift; sourceTree = "<group>"; };
 		C12357A427BD2B4E0093D55E /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		C12357A727BEA0930093D55E /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -474,6 +476,7 @@
 			isa = PBXGroup;
 			children = (
 				A872543427C8DFEF0025CC8A /* Helper.swift */,
+				A872545827C8E4E40025CC8A /* PhotoWidgetExtention.swift */,
 				A872543627C8E0750025CC8A /* WidgetView.swift */,
 				A872543827C8E0910025CC8A /* ImageManager.swift */,
 				A872543A27C8E0B10025CC8A /* ImagePicker.swift */,
@@ -653,6 +656,7 @@
 				92D0239627B28E1F00099E69 /* CameraService.swift in Sources */,
 				A872544F27C8E1370025CC8A /* GrandaLocketWidget.intentdefinition in Sources */,
 				92664A5527B51CA6006C860E /* MainView.swift in Sources */,
+				A872545927C8E4E40025CC8A /* PhotoWidgetExtention.swift in Sources */,
 				92D14E5827C436A300998DED /* DrawView.swift in Sources */,
 				886A463F27BBBD5B00B6290A /* HealthyPersonTextEditor.swift in Sources */,
 				922F74AB27BE75F000E03453 /* FooterNextView.swift in Sources */,
