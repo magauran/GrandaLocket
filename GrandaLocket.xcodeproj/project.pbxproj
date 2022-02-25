@@ -1035,7 +1035,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GCU6VHU5S6;
+				DEVELOPMENT_TEAM = GLQY2SH5YN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GrandaLocketWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = GrandaLocketWidget;
@@ -1047,7 +1047,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mao.GrandaLocketWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magauran.GrandaLocket.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1061,9 +1061,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GCU6VHU5S6;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GrandaLocketWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = GrandaLocketWidget;
@@ -1075,8 +1076,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mao.GrandaLocketWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magauran.GrandaLocket.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1092,7 +1094,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GCU6VHU5S6;
+				DEVELOPMENT_TEAM = GLQY2SH5YN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GrandaLocketWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = GrandaLocketWidget;
@@ -1104,7 +1106,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.magauran.GrandaLocket.GrandaLocketWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magauran.GrandaLocket.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
