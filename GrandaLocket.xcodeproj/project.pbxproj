@@ -85,7 +85,6 @@
 		92FBDACE27B59C280062A9A7 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBDACD27B59C280062A9A7 /* PickerView.swift */; };
 		92FBDAD127B699820062A9A7 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBDAD027B699820062A9A7 /* PhoneNumberView.swift */; };
 		92FBDAD427B6B4B30062A9A7 /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = 92FBDAD327B6B4B30062A9A7 /* PhoneNumberKit */; };
-		A872542827C8D1B40025CC8A /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A872542727C8D1B40025CC8A /* FirebaseFirestoreSwift-Beta */; };
 		A872542B27C8DC880025CC8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A872542927C8DC880025CC8A /* InfoPlist.strings */; };
 		A872542E27C8DC880025CC8A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A872542C27C8DC880025CC8A /* Localizable.strings */; };
 		A872543527C8DFEF0025CC8A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543427C8DFEF0025CC8A /* Helper.swift */; };
@@ -231,7 +230,6 @@
 			files = (
 				92FBDAD427B6B4B30062A9A7 /* PhoneNumberKit in Frameworks */,
 				92388C8D27C59A6500C43B3B /* FirebaseCrashlytics in Frameworks */,
-				A872542827C8D1B40025CC8A /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				92388C8B27C59A6500C43B3B /* FirebaseAuth in Frameworks */,
 				92388C8F27C59A6500C43B3B /* FirebaseFirestore in Frameworks */,
 				92D14E4C27C42EDB00998DED /* Lottie in Frameworks */,
@@ -524,7 +522,6 @@
 				92388C8C27C59A6500C43B3B /* FirebaseCrashlytics */,
 				92388C8E27C59A6500C43B3B /* FirebaseFirestore */,
 				92388C9027C59A6500C43B3B /* FirebaseStorage */,
-				A872542727C8D1B40025CC8A /* FirebaseFirestoreSwift-Beta */,
 			);
 			productName = GrandaLocket;
 			productReference = 882266E827B2658C00501312 /* GrandaLocket.app */;
@@ -1197,11 +1194,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 92FBDAD227B6B4B20062A9A7 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */;
 			productName = PhoneNumberKit;
-		};
-		A872542727C8D1B40025CC8A /* FirebaseFirestoreSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 92388C8927C59A6500C43B3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreSwift-Beta";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
