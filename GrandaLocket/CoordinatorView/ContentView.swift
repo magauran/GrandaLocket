@@ -15,11 +15,11 @@ struct ContentView: View {
     @State var syncContacts: Bool = true
     @State var snapshotImage: UIImage = UIImage()
 
-    init() {
-        if Auth.auth().currentUser?.uid != nil {
-            _destination = State(initialValue: .contacts)
-        }
-    }
+//    init() {
+//        if Auth.auth().currentUser?.uid != nil {
+//            _destination = State(initialValue: .contacts)
+//        }
+//    }
     
     var body: some View {
         Group {
