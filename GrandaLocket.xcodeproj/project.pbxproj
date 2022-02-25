@@ -85,9 +85,47 @@
 		92FBDACE27B59C280062A9A7 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBDACD27B59C280062A9A7 /* PickerView.swift */; };
 		92FBDAD127B699820062A9A7 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBDAD027B699820062A9A7 /* PhoneNumberView.swift */; };
 		92FBDAD427B6B4B30062A9A7 /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = 92FBDAD327B6B4B30062A9A7 /* PhoneNumberKit */; };
+		A872542827C8D1B40025CC8A /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A872542727C8D1B40025CC8A /* FirebaseFirestoreSwift-Beta */; };
+		A872542B27C8DC880025CC8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A872542927C8DC880025CC8A /* InfoPlist.strings */; };
+		A872542E27C8DC880025CC8A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A872542C27C8DC880025CC8A /* Localizable.strings */; };
+		A872543527C8DFEF0025CC8A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543427C8DFEF0025CC8A /* Helper.swift */; };
+		A872543727C8E0750025CC8A /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543627C8E0750025CC8A /* WidgetView.swift */; };
+		A872543927C8E0910025CC8A /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543827C8E0910025CC8A /* ImageManager.swift */; };
+		A872543B27C8E0B10025CC8A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872543A27C8E0B10025CC8A /* ImagePicker.swift */; };
+		A872544427C8E1350025CC8A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A872544327C8E1350025CC8A /* WidgetKit.framework */; };
+		A872544627C8E1350025CC8A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A872544527C8E1350025CC8A /* SwiftUI.framework */; };
+		A872544927C8E1350025CC8A /* GrandaLocketWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872544827C8E1350025CC8A /* GrandaLocketWidget.swift */; };
+		A872544C27C8E1370025CC8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A872544B27C8E1370025CC8A /* Assets.xcassets */; };
+		A872544E27C8E1370025CC8A /* GrandaLocketWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A872544A27C8E1350025CC8A /* GrandaLocketWidget.intentdefinition */; };
+		A872544F27C8E1370025CC8A /* GrandaLocketWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A872544A27C8E1350025CC8A /* GrandaLocketWidget.intentdefinition */; };
+		A872545227C8E1370025CC8A /* GrandaLocketWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A872544227C8E1350025CC8A /* GrandaLocketWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C12357A527BD2B4E0093D55E /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12357A427BD2B4E0093D55E /* Palette.swift */; };
 		C12357A827BEA0930093D55E /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12357A727BEA0930093D55E /* Typography.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A872545027C8E1370025CC8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 882266E027B2658C00501312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A872544127C8E1350025CC8A;
+			remoteInfo = GrandaLocketWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A872545727C8E1370025CC8A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A872545227C8E1370025CC8A /* GrandaLocketWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		882266E827B2658C00501312 /* GrandaLocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrandaLocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +203,23 @@
 		92FBDACB27B5971B0062A9A7 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 		92FBDACD27B59C280062A9A7 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		92FBDAD027B699820062A9A7 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		A872542A27C8DC880025CC8A /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A872542D27C8DC880025CC8A /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A872542F27C8DC980025CC8A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A872543027C8DC980025CC8A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A872543127C8DCB70025CC8A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A872543227C8DCB70025CC8A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A872543427C8DFEF0025CC8A /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		A872543627C8E0750025CC8A /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
+		A872543827C8E0910025CC8A /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		A872543A27C8E0B10025CC8A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A872544227C8E1350025CC8A /* GrandaLocketWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GrandaLocketWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A872544327C8E1350025CC8A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A872544527C8E1350025CC8A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A872544827C8E1350025CC8A /* GrandaLocketWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandaLocketWidget.swift; sourceTree = "<group>"; };
+		A872544A27C8E1350025CC8A /* GrandaLocketWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = GrandaLocketWidget.intentdefinition; sourceTree = "<group>"; };
+		A872544B27C8E1370025CC8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A872544D27C8E1370025CC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C12357A427BD2B4E0093D55E /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		C12357A727BEA0930093D55E /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,10 +231,20 @@
 			files = (
 				92FBDAD427B6B4B30062A9A7 /* PhoneNumberKit in Frameworks */,
 				92388C8D27C59A6500C43B3B /* FirebaseCrashlytics in Frameworks */,
+				A872542827C8D1B40025CC8A /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				92388C8B27C59A6500C43B3B /* FirebaseAuth in Frameworks */,
 				92388C8F27C59A6500C43B3B /* FirebaseFirestore in Frameworks */,
 				92D14E4C27C42EDB00998DED /* Lottie in Frameworks */,
 				92388C9127C59A6500C43B3B /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A872543F27C8E1350025CC8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A872544627C8E1350025CC8A /* SwiftUI.framework in Frameworks */,
+				A872544427C8E1350025CC8A /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				882266EA27B2658C00501312 /* GrandaLocket */,
+				A872544727C8E1350025CC8A /* GrandaLocketWidget */,
 				882266E927B2658C00501312 /* Products */,
 				922F74B527BE9CF000E03453 /* Frameworks */,
 			);
@@ -199,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				882266E827B2658C00501312 /* GrandaLocket.app */,
+				A872544227C8E1350025CC8A /* GrandaLocketWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +287,7 @@
 				C12357A627BE98E40093D55E /* DesignKit */,
 				922F74B227BE9C2800E03453 /* Services */,
 				92E4F57127C407C90040E25B /* SendView */,
+				A872543327C8DFD40025CC8A /* Widget */,
 				92D14E5927C505B800998DED /* Feed */,
 				92CC9FD827BA6518009C7AB7 /* Fonts */,
 				92664A5227B5084F006C860E /* BlurView.swift */,
@@ -229,6 +297,8 @@
 				92388C9227C62F1D00C43B3B /* button_loading.json */,
 				92E51C5527B2694900FEE370 /* GoogleService-Info.plist */,
 				882266FD27B2C5D900501312 /* Info.plist */,
+				A872542C27C8DC880025CC8A /* Localizable.strings */,
+				A872542927C8DC880025CC8A /* InfoPlist.strings */,
 				882266EF27B2658F00501312 /* Assets.xcassets */,
 				882266F127B2658F00501312 /* Preview Content */,
 			);
@@ -290,6 +360,8 @@
 		922F74B527BE9CF000E03453 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A872544327C8E1350025CC8A /* WidgetKit.framework */,
+				A872544527C8E1350025CC8A /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -393,6 +465,28 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		A872543327C8DFD40025CC8A /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				A872543427C8DFEF0025CC8A /* Helper.swift */,
+				A872543627C8E0750025CC8A /* WidgetView.swift */,
+				A872543827C8E0910025CC8A /* ImageManager.swift */,
+				A872543A27C8E0B10025CC8A /* ImagePicker.swift */,
+			);
+			name = Widget;
+			sourceTree = "<group>";
+		};
+		A872544727C8E1350025CC8A /* GrandaLocketWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A872544827C8E1350025CC8A /* GrandaLocketWidget.swift */,
+				A872544A27C8E1350025CC8A /* GrandaLocketWidget.intentdefinition */,
+				A872544B27C8E1370025CC8A /* Assets.xcassets */,
+				A872544D27C8E1370025CC8A /* Info.plist */,
+			);
+			path = GrandaLocketWidget;
+			sourceTree = "<group>";
+		};
 		C12357A627BE98E40093D55E /* DesignKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,10 +509,12 @@
 				882266E427B2658C00501312 /* Sources */,
 				882266E527B2658C00501312 /* Frameworks */,
 				882266E627B2658C00501312 /* Resources */,
+				A872545727C8E1370025CC8A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A872545127C8E1370025CC8A /* PBXTargetDependency */,
 			);
 			name = GrandaLocket;
 			packageProductDependencies = (
@@ -428,10 +524,28 @@
 				92388C8C27C59A6500C43B3B /* FirebaseCrashlytics */,
 				92388C8E27C59A6500C43B3B /* FirebaseFirestore */,
 				92388C9027C59A6500C43B3B /* FirebaseStorage */,
+				A872542727C8D1B40025CC8A /* FirebaseFirestoreSwift-Beta */,
 			);
 			productName = GrandaLocket;
 			productReference = 882266E827B2658C00501312 /* GrandaLocket.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A872544127C8E1350025CC8A /* GrandaLocketWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A872545327C8E1370025CC8A /* Build configuration list for PBXNativeTarget "GrandaLocketWidgetExtension" */;
+			buildPhases = (
+				A872543E27C8E1350025CC8A /* Sources */,
+				A872543F27C8E1350025CC8A /* Frameworks */,
+				A872544027C8E1350025CC8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrandaLocketWidgetExtension;
+			productName = GrandaLocketWidgetExtension;
+			productReference = A872544227C8E1350025CC8A /* GrandaLocketWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -446,6 +560,9 @@
 					882266E727B2658C00501312 = {
 						CreatedOnToolsVersion = 13.2;
 					};
+					A872544127C8E1350025CC8A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 882266E327B2658C00501312 /* Build configuration list for PBXProject "GrandaLocket" */;
@@ -455,6 +572,9 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				it,
+				tr,
 			);
 			mainGroup = 882266DF27B2658C00501312;
 			packageReferences = (
@@ -467,6 +587,7 @@
 			projectRoot = "";
 			targets = (
 				882266E727B2658C00501312 /* GrandaLocket */,
+				A872544127C8E1350025CC8A /* GrandaLocketWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -477,6 +598,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92CC9FE727BA663B009C7AB7 /* ALSHauss-Book.ttf in Resources */,
+				A872542B27C8DC880025CC8A /* InfoPlist.strings in Resources */,
 				882266F327B2658F00501312 /* Preview Assets.xcassets in Resources */,
 				92CC9FEB27BA663B009C7AB7 /* ALSHauss-BlackItalic.ttf in Resources */,
 				92CC9FED27BA663B009C7AB7 /* ALSHauss-Black.ttf in Resources */,
@@ -488,6 +610,7 @@
 				882266F027B2658F00501312 /* Assets.xcassets in Resources */,
 				92CC9FF727BA6649009C7AB7 /* ALSHauss-RegularItalic.ttf in Resources */,
 				92CC9FF427BA6649009C7AB7 /* ALSHauss-Regular.ttf in Resources */,
+				A872542E27C8DC880025CC8A /* Localizable.strings in Resources */,
 				92E51C5627B2694900FEE370 /* GoogleService-Info.plist in Resources */,
 				92CC9FE627BA663B009C7AB7 /* ALSHauss-Bold.ttf in Resources */,
 				92CC9FEC27BA663B009C7AB7 /* ALSHauss-BookItalic.ttf in Resources */,
@@ -496,6 +619,14 @@
 				92CC9FF527BA6649009C7AB7 /* ALSHauss-ThinItalic.ttf in Resources */,
 				92CC9FE927BA663B009C7AB7 /* ALSHauss-HairlineItalic.ttf in Resources */,
 				92CC9FEA27BA663B009C7AB7 /* ALSHauss-LightItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A872544027C8E1350025CC8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A872544C27C8E1370025CC8A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,23 +639,28 @@
 			files = (
 				92388C9B27C6CA7000C43B3B /* PhotosInfo.swift in Sources */,
 				92388C9527C6772D00C43B3B /* SendViewModel.swift in Sources */,
+				A872543727C8E0750025CC8A /* WidgetView.swift in Sources */,
 				92D14E5F27C58F2900998DED /* UserImagesService.swift in Sources */,
 				92D14E5D27C58BFA00998DED /* FeedViewModel.swift in Sources */,
 				92D14E5B27C5065100998DED /* FeedView.swift in Sources */,
 				92D0239627B28E1F00099E69 /* CameraService.swift in Sources */,
+				A872544F27C8E1370025CC8A /* GrandaLocketWidget.intentdefinition in Sources */,
 				92664A5527B51CA6006C860E /* MainView.swift in Sources */,
 				92D14E5827C436A300998DED /* DrawView.swift in Sources */,
 				886A463F27BBBD5B00B6290A /* HealthyPersonTextEditor.swift in Sources */,
 				922F74AB27BE75F000E03453 /* FooterNextView.swift in Sources */,
 				92D0239527B28E1F00099E69 /* ImageResizer.swift in Sources */,
 				92E4F57727C410A80040E25B /* ContactRow.swift in Sources */,
+				A872543527C8DFEF0025CC8A /* Helper.swift in Sources */,
 				92388C9727C69CE300C43B3B /* DownloadImageService.swift in Sources */,
 				92D14E5027C432F300998DED /* ExtensionUIImage.swift in Sources */,
 				92D14E5227C4337D00998DED /* ExtensionUIScreen.swift in Sources */,
+				A872543B27C8E0B10025CC8A /* ImagePicker.swift in Sources */,
 				92D0239727B28E1F00099E69 /* PhotoCaptureProcessor.swift in Sources */,
 				92D0238C27B27D2100099E69 /* AppDelegate.swift in Sources */,
 				922F74A727BD208A00E03453 /* ContactInfo.swift in Sources */,
 				92D14E5427C433D500998DED /* ExtensionString.swift in Sources */,
+				A872543927C8E0910025CC8A /* ImageManager.swift in Sources */,
 				92FBDAD127B699820062A9A7 /* PhoneNumberView.swift in Sources */,
 				92664A5327B50850006C860E /* BlurView.swift in Sources */,
 				C12357A527BD2B4E0093D55E /* Palette.swift in Sources */,
@@ -563,7 +699,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A872543E27C8E1350025CC8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A872544927C8E1350025CC8A /* GrandaLocketWidget.swift in Sources */,
+				A872544E27C8E1370025CC8A /* GrandaLocketWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A872545127C8E1370025CC8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A872544127C8E1350025CC8A /* GrandaLocketWidgetExtension */;
+			targetProxy = A872545027C8E1370025CC8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A872542927C8DC880025CC8A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A872542A27C8DC880025CC8A /* it */,
+				A872542F27C8DC980025CC8A /* ru */,
+				A872543127C8DCB70025CC8A /* tr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A872542C27C8DC880025CC8A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A872542D27C8DC880025CC8A /* it */,
+				A872543027C8DC980025CC8A /* ru */,
+				A872543227C8DCB70025CC8A /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		882266F427B2658F00501312 /* Debug */ = {
@@ -685,6 +861,7 @@
 		882266F727B2658F00501312 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GrandaLocket/GrandaLocket.entitlements;
@@ -718,6 +895,7 @@
 		882266F827B2658F00501312 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GrandaLocket/GrandaLocket.entitlements;
@@ -812,6 +990,7 @@
 		88277DA527B56F98001BB797 /* Debug [Alexey] */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GrandaLocket/GrandaLocket.entitlements;
@@ -840,6 +1019,92 @@
 			};
 			name = "Debug [Alexey]";
 		};
+		A872545427C8E1370025CC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GCU6VHU5S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GrandaLocketWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GrandaLocketWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mao.GrandaLocketWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A872545527C8E1370025CC8A /* Debug [Alexey] */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GCU6VHU5S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GrandaLocketWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GrandaLocketWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mao.GrandaLocketWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug [Alexey]";
+		};
+		A872545627C8E1370025CC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GCU6VHU5S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GrandaLocketWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GrandaLocketWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magauran.GrandaLocket.GrandaLocketWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -859,6 +1124,16 @@
 				882266F727B2658F00501312 /* Debug */,
 				88277DA527B56F98001BB797 /* Debug [Alexey] */,
 				882266F827B2658F00501312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A872545327C8E1370025CC8A /* Build configuration list for PBXNativeTarget "GrandaLocketWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A872545427C8E1370025CC8A /* Debug */,
+				A872545527C8E1370025CC8A /* Debug [Alexey] */,
+				A872545627C8E1370025CC8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -922,6 +1197,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 92FBDAD227B6B4B20062A9A7 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */;
 			productName = PhoneNumberKit;
+		};
+		A872542727C8D1B40025CC8A /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92388C8927C59A6500C43B3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

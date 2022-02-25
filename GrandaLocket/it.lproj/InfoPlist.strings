@@ -1,0 +1,9 @@
+/* Bundle name */
+"CFBundleName" = "";
+
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "L'app deve utilizzare la fotocamera per scattare foto";
+
+/* Privacy - Contacts Usage Description */
+"NSContactsUsageDescription" = "Per sincronizzare i contatti abbiamo bisogno della tua autorizzazione";
+
