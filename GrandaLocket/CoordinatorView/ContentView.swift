@@ -9,7 +9,6 @@ import SwiftUI
 import Firebase
 
 struct ContentView: View {
-
     @State var destination: AppDestination = .smsAuth
     @State var phoneNumber: String = "+16505551234"
     @State var syncContacts: Bool = true
@@ -17,7 +16,7 @@ struct ContentView: View {
 
     init() {
         if Auth.auth().currentUser?.uid != nil {
-            _destination = State(initialValue: .main)
+            _destination = State(initialValue: .feed)
         }
     }
     

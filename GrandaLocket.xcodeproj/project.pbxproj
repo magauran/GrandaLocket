@@ -10,6 +10,7 @@
 		882266EC27B2658C00501312 /* GrandaLocketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882266EB27B2658C00501312 /* GrandaLocketApp.swift */; };
 		882266F027B2658F00501312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882266EF27B2658F00501312 /* Assets.xcassets */; };
 		882266F327B2658F00501312 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882266F227B2658F00501312 /* Preview Assets.xcassets */; };
+		883AEDB327D934BB00D8D747 /* ReactionsCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883AEDB227D934BB00D8D747 /* ReactionsCounterView.swift */; };
 		883BFE1A27C6EBF3009BC9C0 /* KeyboardObserver in Frameworks */ = {isa = PBXBuildFile; productRef = 883BFE1927C6EBF3009BC9C0 /* KeyboardObserver */; };
 		883BFE1C27C6ED7B009BC9C0 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 883BFE1B27C6ED7B009BC9C0 /* FirebaseFirestoreSwift-Beta */; };
 		883BFE1E27C6F2EC009BC9C0 /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883BFE1D27C6F2EC009BC9C0 /* AppearanceConfigurator.swift */; };
@@ -37,7 +38,7 @@
 		92388C9527C6772D00C43B3B /* SendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92388C9427C6772C00C43B3B /* SendViewModel.swift */; };
 		92388C9727C69CE300C43B3B /* DownloadImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92388C9627C69CE100C43B3B /* DownloadImageService.swift */; };
 		92388C9B27C6CA7000C43B3B /* PhotosInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92388C9A27C6CA7000C43B3B /* PhotosInfo.swift */; };
-		924D696D27C8DAA70020724C /* GaleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924D696C27C8DAA60020724C /* GaleryView.swift */; };
+		924D696D27C8DAA70020724C /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924D696C27C8DAA60020724C /* GalleryView.swift */; };
 		9261249527CB973B00CE6B80 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9261249427CB973B00CE6B80 /* WidgetKit.framework */; };
 		9261249727CB973B00CE6B80 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9261249627CB973B00CE6B80 /* SwiftUI.framework */; };
 		9261249A27CB973B00CE6B80 /* FireWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9261249927CB973B00CE6B80 /* FireWidget.swift */; };
@@ -138,6 +139,7 @@
 		882266EF27B2658F00501312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		882266F227B2658F00501312 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		882266FD27B2C5D900501312 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883AEDB227D934BB00D8D747 /* ReactionsCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionsCounterView.swift; sourceTree = "<group>"; };
 		883BFE1D27C6F2EC009BC9C0 /* AppearanceConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceConfigurator.swift; sourceTree = "<group>"; };
 		883BFE1F27C6FA06009BC9C0 /* ScreenshotMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotMaker.swift; sourceTree = "<group>"; };
 		884C2B1427D0CF52002128E6 /* FireWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FireWidgetExtension.entitlements; sourceTree = "<group>"; };
@@ -161,7 +163,7 @@
 		92388C9427C6772C00C43B3B /* SendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewModel.swift; sourceTree = "<group>"; };
 		92388C9627C69CE100C43B3B /* DownloadImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageService.swift; sourceTree = "<group>"; };
 		92388C9A27C6CA7000C43B3B /* PhotosInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosInfo.swift; sourceTree = "<group>"; };
-		924D696C27C8DAA60020724C /* GaleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleryView.swift; sourceTree = "<group>"; };
+		924D696C27C8DAA60020724C /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		9261248E27CB93E600CE6B80 /* GrandaLocketDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GrandaLocketDebug.entitlements; sourceTree = "<group>"; };
 		9261249327CB973A00CE6B80 /* FireWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FireWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9261249427CB973B00CE6B80 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -303,7 +305,7 @@
 				922F74B227BE9C2800E03453 /* Services */,
 				92E4F57127C407C90040E25B /* SendView */,
 				92D14E5927C505B800998DED /* Feed */,
-				924D696B27C8DA760020724C /* GaleryView */,
+				924D696B27C8DA760020724C /* GalleryView */,
 				92CC9FD827BA6518009C7AB7 /* Fonts */,
 				92664A5227B5084F006C860E /* BlurView.swift */,
 				922F74AA27BE75F000E03453 /* FooterNextView.swift */,
@@ -379,12 +381,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		924D696B27C8DA760020724C /* GaleryView */ = {
+		924D696B27C8DA760020724C /* GalleryView */ = {
 			isa = PBXGroup;
 			children = (
-				924D696C27C8DAA60020724C /* GaleryView.swift */,
+				924D696C27C8DAA60020724C /* GalleryView.swift */,
+				883AEDB227D934BB00D8D747 /* ReactionsCounterView.swift */,
 			);
-			path = GaleryView;
+			path = GalleryView;
 			sourceTree = "<group>";
 		};
 		9261249827CB973B00CE6B80 /* FireWidget */ = {
@@ -663,7 +666,7 @@
 			files = (
 				92388C9B27C6CA7000C43B3B /* PhotosInfo.swift in Sources */,
 				92388C9527C6772D00C43B3B /* SendViewModel.swift in Sources */,
-				924D696D27C8DAA70020724C /* GaleryView.swift in Sources */,
+				924D696D27C8DAA70020724C /* GalleryView.swift in Sources */,
 				92D14E5F27C58F2900998DED /* UserImagesService.swift in Sources */,
 				92D14E5D27C58BFA00998DED /* FeedViewModel.swift in Sources */,
 				92D14E5B27C5065100998DED /* FeedView.swift in Sources */,
@@ -690,6 +693,7 @@
 				C12357A827BEA0930093D55E /* Typography.swift in Sources */,
 				9201AAC027BBCEEC00842557 /* AppDestination.swift in Sources */,
 				884D539427BAAA1900C23FF5 /* ExtensionTransition.swift in Sources */,
+				883AEDB327D934BB00D8D747 /* ReactionsCounterView.swift in Sources */,
 				884D538027B58FF500C23FF5 /* VideoProvider.swift in Sources */,
 				883BFE1E27C6F2EC009BC9C0 /* AppearanceConfigurator.swift in Sources */,
 				922F74A927BD223400E03453 /* ContactsView.swift in Sources */,
@@ -1074,7 +1078,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ettern0.GrandaLocket.FireWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magauran.GrandaLocket.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -75,12 +75,12 @@ private struct MyFriendsFeedView: View {
                 requestList
             }
             ForEach(viewModel.friends, id: \.self) { friend in
-                if friend.url.count > 0 {
+                if friend.photos.count > 0 {
                     VStack(alignment: .leading) {
                         Text(friend.name)
                             .font(Typography.headerS)
                             .padding(.bottom, 20)
-                        UserPhotosView(urls: friend.url)
+                        UserPhotosView(photos: friend.photos)
                     }
                 }
             }
@@ -172,7 +172,7 @@ private struct MyFeedView: View {
   //              signOutButton
             }
             .padding(.bottom, 20)
-            UserPhotosView(urls: viewModel.myPhotos)
+            UserPhotosView(photos: viewModel.myPhotos)
 
         }
     }
@@ -193,23 +193,35 @@ private struct MyFeedView: View {
 }
 
 private struct UserPhotosView: View {
-    let urls: Array<URL>
+    let photos: [FeedViewModel.Photo]
+
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 10) {
-                ForEach(urls, id: \.self) { url in
-                    NavigationLink(destination: GaleryView(urls: urls, focus: url)) {
-                        AsyncImage(url: url) { image in
-                            image
-                                .renderingMode(.original)
-                                .resizable()
-                                .scaledToFill()
-                        } placeholder: {
-                            ProgressView()
-                        }
-                        .frame(width: 100, height: 100)
-                        .background(.clear)
-                        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                ForEach(photos, id: \.self) { photo in
+                    NavigationLink(destination: GalleryView(photos: photos, focus: photo)) {
+                        ZStack {
+                            AsyncImage(url: photo.url) { image in
+                                image
+                                    .renderingMode(.original)
+                                    .resizable()
+                                    .scaledToFill()
+                            } placeholder: {
+                                ProgressView()
+                            }
+                            .background(.clear)
+                            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+
+                            VStack {
+                                Spacer()
+                                HStack {
+                                    ReactionsCounterView(count: photo.reactionsCount)
+                                        .padding(.leading, 4)
+                                        .padding(.bottom, 2)
+                                    Spacer()
+                                }
+                            }
+                        }.frame(width: 100, height: 100)
                     }
                 }
             }

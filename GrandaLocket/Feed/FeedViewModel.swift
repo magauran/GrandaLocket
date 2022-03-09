@@ -10,15 +10,20 @@ import Firebase
 import Combine
 
 final class FeedViewModel: ObservableObject {
+    struct Photo: Hashable {
+        let url: URL
+        let reactionsCount: Int
+    }
+
     struct Friend: Hashable {
         var id: String?
         let name: String
         let phone: String
-        var url: [URL]
+        var photos: [Photo]
     }
 
     @Published var friends: [Friend] = []
-    @Published var myPhotos: Array<URL> = []
+    @Published var myPhotos: [Photo] = []
     private let service = DownloadImageService()
     private var cancellable: AnyCancellable?
     private var cancellablePhoto: AnyCancellable?
@@ -35,13 +40,13 @@ final class FeedViewModel: ObservableObject {
 
                 if let user = Auth.auth().currentUser {
                     let value = reversedPhoto.filter { $0.authorID == user.uid }
-                    self.myPhotos = value.map { $0.url }
+                    self.myPhotos = value.map { Photo(url: $0.url, reactionsCount: 0) }
                 }
 
                 self.friends = friendsModels.map { friend in
                     let photos = reversedPhoto.filter { $0.authorID == friend.id }
-                    let urls = photos.map { $0.url }
-                    return Friend(id: friend.id, name: friend.firstName, phone: friend.phoneNumber, url: urls)
+                    let photoItems = photos.map { Photo(url: $0.url, reactionsCount: 0) }
+                    return Friend(id: friend.id, name: friend.firstName, phone: friend.phoneNumber, photos: photoItems)
                 }
             }
 
