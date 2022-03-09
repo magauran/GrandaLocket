@@ -74,7 +74,7 @@ private struct MyFriendsFeedView: View {
             if filteredContacts.count > 0 {
                 requestList
             }
-            ForEach(viewModel.friends, id: \.self) { friend in
+            ForEach(viewModel.friends, id: \.id) { friend in
                 if friend.photos.count > 0 {
                     VStack(alignment: .leading) {
                         Text(friend.name)
