@@ -10,8 +10,10 @@ import FirebaseStorage
 import FirebaseFirestore
 
 struct RemotePhoto: Equatable {
+    let id: String
     let url: URL
     let authorID: String
+    let reactionsCount: Int
 }
 
 final class DownloadImageService {
@@ -48,6 +50,43 @@ final class DownloadImageService {
         
     }
 
+    func addImageListener(onUpdate: @escaping () -> Void) {
+        guard let user = Auth.auth().currentUser else {
+            return
+        }
+
+        db?.collection("user_images").document(user.uid)
+            .addSnapshotListener { documentSnapshot, error in
+                guard documentSnapshot != nil else {
+                    print("Error fetching document: \(error?.localizedDescription ?? "")")
+                    return
+                }
+                onUpdate()
+            }
+
+    }
+
+    func addPhotosListener(photos: [RemotePhoto], onUpdate: @escaping () -> Void) {
+        var skip = true
+        db?.collection("images").addSnapshotListener({ documentSnapshot, error in // тупо
+            guard !skip else {
+                skip = false
+                return
+            }
+            guard documentSnapshot?.metadata.isFromCache == false else { return }
+            guard documentSnapshot != nil else {
+                print("Error fetching document: \(error?.localizedDescription ?? "")")
+                return
+            }
+            onUpdate()
+        })
+    }
+
+    func likePhoto(id: String) {
+        guard let db = db else { return }
+        db.collection("images").document(id).updateData(["reactions": FieldValue.increment(Int64(1))])
+    }
+
     private func fetchPhotosProperties(photoIDs: [String], completion: @escaping ([RemotePhoto]) -> Void) {
         let dispatchGroup = DispatchGroup()
 
@@ -82,23 +121,10 @@ final class DownloadImageService {
                 return completion(nil)
             }
 
-            let photo = RemotePhoto(url: url, authorID: author)
+            let reactionsCount = document["reactions"] as? Int
+
+            let photo = RemotePhoto(id: photoID, url: url, authorID: author, reactionsCount: reactionsCount ?? 0)
             completion(photo)
         }
-    }
-
-    func addImageListener(onUpdate: @escaping () -> Void) {
-        guard let user = Auth.auth().currentUser else {
-            return
-        }
-
-        db?.collection("user_images").document(user.uid)
-            .addSnapshotListener { documentSnapshot, error in
-                guard documentSnapshot != nil else {
-                    print("Error fetching document: \(error?.localizedDescription ?? "")")
-                    return
-                }
-                onUpdate()
-            }
     }
 }

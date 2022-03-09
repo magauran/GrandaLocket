@@ -8,7 +8,6 @@
 import Foundation
 
 final class PhotosInfo: ObservableObject {
-
     @Published var photos: [RemotePhoto] = []
     static let instance = PhotosInfo()
     private let imageService = DownloadImageService()
@@ -39,6 +38,8 @@ final class PhotosInfo: ObservableObject {
         dispatchGroup.enter()
         imageService.download { value in
             self.photos = value
+
+            self.addPhotosListener()
         }
         dispatchGroup.leave()
 
@@ -50,4 +51,10 @@ final class PhotosInfo: ObservableObject {
         }
     }
 
+
+    private func addPhotosListener() {
+        imageService.addPhotosListener(photos: self.photos) { [weak self] in
+            self?.fetchIfNeeded()
+        }
+    }
 }

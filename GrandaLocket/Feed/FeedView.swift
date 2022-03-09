@@ -41,7 +41,7 @@ struct FeedView: View {
                     }
                 }
             }
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
@@ -80,7 +80,7 @@ private struct MyFriendsFeedView: View {
                         Text(friend.name)
                             .font(Typography.headerS)
                             .padding(.bottom, 20)
-                        UserPhotosView(photos: friend.photos)
+                        UserPhotosView(photos: friend.photos, viewModel: viewModel)
                     }
                 }
             }
@@ -172,7 +172,7 @@ private struct MyFeedView: View {
   //              signOutButton
             }
             .padding(.bottom, 20)
-            UserPhotosView(photos: viewModel.myPhotos)
+            UserPhotosView(photos: viewModel.myPhotos, viewModel: viewModel)
 
         }
     }
@@ -194,12 +194,13 @@ private struct MyFeedView: View {
 
 private struct UserPhotosView: View {
     let photos: [FeedViewModel.Photo]
+    let viewModel: FeedViewModel
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 10) {
-                ForEach(photos, id: \.self) { photo in
-                    NavigationLink(destination: GalleryView(photos: photos, focus: photo)) {
+                ForEach(photos, id: \.id) { photo in
+                    NavigationLink(destination: GalleryView(photos: photos, focus: photo, viewModel: viewModel)) {
                         ZStack {
                             AsyncImage(url: photo.url) { image in
                                 image

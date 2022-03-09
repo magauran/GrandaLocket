@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct GalleryItemView: View {
-    let url: URL
-    let reactionsCount: Int
+    let photo: FeedViewModel.Photo
+    let viewModel: FeedViewModel
 
     @State private var scale: CGFloat = 0
     @State private var opacity: CGFloat = 0
 
     var body: some View {
         ZStack {
-            AsyncImage(url: url) { image in
+            AsyncImage(url: photo.url) { image in
                 image
                     .resizable()
                     .scaledToFill()
@@ -26,6 +26,8 @@ struct GalleryItemView: View {
             .background(.clear)
             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
             .onTapGesture(count: 2) {
+                viewModel.like(photo)
+
                 withAnimation(.easeInOut(duration: 0.5)) {
                     self.scale = 1.2
                     self.opacity = 1
@@ -45,7 +47,7 @@ struct GalleryItemView: View {
             VStack {
                 Spacer()
                 HStack {
-                    ReactionsCounterView(count: reactionsCount)
+                    ReactionsCounterView(count: photo.reactionsCount)
                         .padding(.leading, 4)
                         .padding(.bottom, 4)
                     Spacer()
@@ -63,13 +65,14 @@ struct GalleryItemView: View {
 struct GalleryView: View {
     let photos: [FeedViewModel.Photo]
     let focus: FeedViewModel.Photo
+    let viewModel: FeedViewModel
 
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             ScrollViewReader { value in
                 VStack(spacing: 16) {
                     ForEach(photos, id: \.self) { item in
-                        GalleryItemView(url: item.url, reactionsCount: item.reactionsCount)
+                        GalleryItemView(photo: item, viewModel: viewModel)
                             .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
                     }
                 }

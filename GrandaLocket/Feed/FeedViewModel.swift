@@ -11,6 +11,7 @@ import Combine
 
 final class FeedViewModel: ObservableObject {
     struct Photo: Hashable {
+        let id: String
         let url: URL
         let reactionsCount: Int
     }
@@ -40,15 +41,22 @@ final class FeedViewModel: ObservableObject {
 
                 if let user = Auth.auth().currentUser {
                     let value = reversedPhoto.filter { $0.authorID == user.uid }
-                    self.myPhotos = value.map { Photo(url: $0.url, reactionsCount: 0) }
+                    self.myPhotos = value.map {
+                        Photo(id: $0.id, url: $0.url, reactionsCount: $0.reactionsCount)
+                    }
                 }
 
                 self.friends = friendsModels.map { friend in
                     let photos = reversedPhoto.filter { $0.authorID == friend.id }
-                    let photoItems = photos.map { Photo(url: $0.url, reactionsCount: 0) }
+                    let photoItems = photos.map {
+                        Photo(id: $0.id, url: $0.url, reactionsCount: $0.reactionsCount)
+                    }
                     return Friend(id: friend.id, name: friend.firstName, phone: friend.phoneNumber, photos: photoItems)
                 }
             }
+    }
 
+    func like(_ photo: Photo) {
+        service.likePhoto(id: photo.id)
     }
 }
