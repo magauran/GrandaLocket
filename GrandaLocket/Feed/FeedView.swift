@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct FeedView: View {
-
     @Binding var destination: AppDestination
     @State private var yDirection: GesturesDirection = .bottom
     @ObservedObject var viewModel = FeedViewModel()
     @State var showContacts: Bool = false
+
     private var minYToChangeMode: CGFloat {
         UIScreen.main.bounds.height * 0.1
     }
-
 
     var body: some View {
         NavigationView {
@@ -71,17 +70,20 @@ private struct MyFriendsFeedView: View {
                     Spacer()
                 }
             }
+            .padding(.horizontal, 8)
             if filteredContacts.count > 0 {
                 requestList
+                    .padding(.horizontal, 8)
             }
             ForEach(viewModel.friends, id: \.id) { friend in
                 if friend.photos.count > 0 {
                     VStack(alignment: .leading) {
                         Text(friend.name)
                             .font(Typography.headerS)
-                            .padding(.bottom, 20)
+                            .padding(.horizontal, 8)
                         UserPhotosView(photos: friend.photos, viewModel: viewModel)
                     }
+                    .padding(.bottom, 20)
                 }
             }
         }
@@ -172,8 +174,8 @@ private struct MyFeedView: View {
   //              signOutButton
             }
             .padding(.bottom, 20)
+            .padding(.horizontal, 8)
             UserPhotosView(photos: viewModel.myPhotos, viewModel: viewModel)
-
         }
     }
 
@@ -225,7 +227,7 @@ private struct UserPhotosView: View {
                         }.frame(width: 100, height: 100)
                     }
                 }
-            }
+            }.padding(.horizontal, 8)
         }
     }
 }

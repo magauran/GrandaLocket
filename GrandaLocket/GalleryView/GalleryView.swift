@@ -73,7 +73,7 @@ struct GalleryView: View {
                 VStack(spacing: 16) {
                     ForEach(photos, id: \.self) { item in
                         GalleryItemView(photo: item, viewModel: viewModel)
-                            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
+                            .aspectRatio(1, contentMode: .fill)
                     }
                 }
                 .onAppear {
@@ -83,5 +83,6 @@ struct GalleryView: View {
                 }
             }
         }
+        .padding(.horizontal, 8)
     }
 }
