@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct GalleryItemView: View {
     let photo: FeedViewModel.Photo
@@ -16,18 +17,16 @@ struct GalleryItemView: View {
 
     var body: some View {
         ZStack {
-            AsyncImage(url: photo.url) { image in
-                image
-                    .resizable()
-                    .scaledToFill()
-            } placeholder: {
-                ProgressView()
-            }
+            WebImage(url: photo.url)
+                .resizable()
+                .placeholder {
+                    Rectangle().foregroundColor(Color(white: 0.1))
+                }
+                .indicator(.activity)
+                .scaledToFill()
             .background(.clear)
             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
             .onTapGesture(count: 2) {
-                viewModel.like(photo)
-
                 withAnimation(.easeInOut(duration: 0.5)) {
                     self.scale = 1.2
                     self.opacity = 1
@@ -42,6 +41,7 @@ struct GalleryItemView: View {
                         self.scale = 0
                         self.opacity = 0
                     }
+                    viewModel.like(photo)
                 }
             }
             VStack {

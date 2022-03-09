@@ -22,6 +22,7 @@
 		884D539227BAA49900C23FF5 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D539127BAA49900C23FF5 /* ExtensionColor.swift */; };
 		884D539427BAAA1900C23FF5 /* ExtensionTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D539327BAAA1900C23FF5 /* ExtensionTransition.swift */; };
 		886A463F27BBBD5B00B6290A /* HealthyPersonTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A463E27BBBD5B00B6290A /* HealthyPersonTextEditor.swift */; };
+		88CC9E3827D954C800CA31CA /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 88CC9E3727D954C800CA31CA /* SDWebImageSwiftUI */; };
 		9201AAC027BBCEEC00842557 /* AppDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9201AABF27BBCEEC00842557 /* AppDestination.swift */; };
 		922F74A727BD208A00E03453 /* ContactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922F74A627BD208A00E03453 /* ContactInfo.swift */; };
 		922F74A927BD223400E03453 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922F74A827BD223400E03453 /* ContactsView.swift */; };
@@ -240,6 +241,7 @@
 				92FBDAD427B6B4B30062A9A7 /* PhoneNumberKit in Frameworks */,
 				883BFE1A27C6EBF3009BC9C0 /* KeyboardObserver in Frameworks */,
 				92388C8D27C59A6500C43B3B /* FirebaseCrashlytics in Frameworks */,
+				88CC9E3827D954C800CA31CA /* SDWebImageSwiftUI in Frameworks */,
 				92388C8B27C59A6500C43B3B /* FirebaseAuth in Frameworks */,
 				92388C8F27C59A6500C43B3B /* FirebaseFirestore in Frameworks */,
 				883BFE1C27C6ED7B009BC9C0 /* FirebaseFirestoreSwift-Beta in Frameworks */,
@@ -551,6 +553,7 @@
 				92388C9027C59A6500C43B3B /* FirebaseStorage */,
 				883BFE1927C6EBF3009BC9C0 /* KeyboardObserver */,
 				883BFE1B27C6ED7B009BC9C0 /* FirebaseFirestoreSwift-Beta */,
+				88CC9E3727D954C800CA31CA /* SDWebImageSwiftUI */,
 			);
 			productName = GrandaLocket;
 			productReference = 882266E827B2658C00501312 /* GrandaLocket.app */;
@@ -609,6 +612,7 @@
 				92D14E4A27C42EDB00998DED /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				92388C8927C59A6500C43B3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				883BFE1827C6EBF3009BC9C0 /* XCRemoteSwiftPackageReference "KeyboardObserver" */,
+				88CC9E3627D954C800CA31CA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 882266E927B2658C00501312 /* Products */;
 			projectDirPath = "";
@@ -1162,6 +1166,14 @@
 				version = 0.1.2;
 			};
 		};
+		88CC9E3627D954C800CA31CA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.2;
+			};
+		};
 		92388C8927C59A6500C43B3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1198,6 +1210,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 92388C8927C59A6500C43B3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		88CC9E3727D954C800CA31CA /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88CC9E3627D954C800CA31CA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 		92388C8A27C59A6500C43B3B /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
