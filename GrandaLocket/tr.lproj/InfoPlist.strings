@@ -1,0 +1,6 @@
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "Uygulamanın fotoğraf çekmek için kamera kullanması gerekiyor";
+
+/* Privacy - Contacts Usage Description */
+"NSContactsUsageDescription" = "Kişileri senkronize etmek için izninize ihtiyacımız var";
+

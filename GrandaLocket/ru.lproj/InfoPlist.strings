@@ -1,0 +1,6 @@
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "Разрешите приложению использовать камеру чтобы делать фотографии";
+
+/* Privacy - Contacts Usage Description */
+"NSContactsUsageDescription" = "Разрешите приложению синхронизировать контакты ";
+
