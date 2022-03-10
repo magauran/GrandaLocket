@@ -1,7 +1,4 @@
 /* No comment provided by engineer. */
-"%@" = "";
-
-/* No comment provided by engineer. */
 "6-Digit Code" = "6-значный код";
 
 /* No comment provided by engineer. */
@@ -29,7 +26,7 @@
 "INVITE" = "Пригласить";
 
 /* No comment provided by engineer. */
-"My Fire" = "Мои Fyre";
+"My Fire" = "Мои Fire";
 
 /* No comment provided by engineer. */
 "My Friends" = "Мои друзья";
@@ -44,20 +41,23 @@
 "Please confirm your country code and enter your phone number" = "Подтвердите, пожалуйста, код вашего региона и введите ваш номер телефона";
 
 /* No comment provided by engineer. */
-"Please enter the code we've send to" = "Пожалуйста, введите код, который мы вамнаправили";
+"Please enter the code we've send to" = "Пожалуйста, введите код, который мы вам направили";
 
 /* No comment provided by engineer. */
 "REQUEST" = "Запрошен";
 
 /* No comment provided by engineer. */
-"See which of your Contacts are already on Fire. Add some friends to get started!" = "Посмотрите, кто из ваших контактов уже использует Fyre. Добавьте друзей для начала!";
+"See which of your Contacts are already on Fire. Add some friends to get started!" = "Посмотрите, кто из ваших контактов уже использует Fire. Добавьте друзей для начала!";
 
 /* No comment provided by engineer. */
 "SEND" = "Отправить";
 
 /* No comment provided by engineer. */
-"Sign in to Fire" = "Войти в Fyre";
+"Sign in to Fire" = "Войти в Fire";
 
 /* No comment provided by engineer. */
 "Sync Contacts" = "Синхронизировать контакты\n";
 
+"PHOTO" = "ФОТО";
+
+"TEXT" = "ТЕКСТ";
