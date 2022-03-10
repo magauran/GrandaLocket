@@ -7,7 +7,7 @@
 
 import Foundation
 
-func getShortNameFromContact(firstName: String, lastName: String) ->String {
+func getShortNameFromContact(firstName: String, lastName: String) -> String {
 
     let firstLetter: String
     let secondLetter: String

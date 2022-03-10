@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SmallCapsuleButtonStyle: ButtonStyle {
-
     var active: Bool = true
+    
     var capsuleFillColor: Color {
         return active ? Palette.accent: Palette.blackLight
     }

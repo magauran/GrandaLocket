@@ -1,5 +1,5 @@
 //
-//  FooterNexView.swift
+//  FooterNextView.swift
 //  GrandaLocket
 //
 //  Created by Сердюков Евгений on 17.02.2022.

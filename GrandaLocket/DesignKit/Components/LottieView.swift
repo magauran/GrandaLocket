@@ -1,5 +1,5 @@
 //
-//  Lottie.swift
+//  LottieView.swift
 //  GrandaLocket
 //
 //  Created by Сердюков Евгений on 21.02.2022.
